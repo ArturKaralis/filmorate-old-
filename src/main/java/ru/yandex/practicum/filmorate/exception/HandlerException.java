@@ -21,6 +21,7 @@ public class HandlerException {
         return new Exception(String.format(e.getMessage()));
     }
 
+
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public Exception handleThrowable(final MethodArgumentNotValidException e){

@@ -15,6 +15,7 @@ import java.util.Map;
 public class UserController {
     private final UserStorage inMemoryUserStorage;
 
+
     @Autowired
     public UserController(UserStorage inMemoryUserStorage) {
         this.inMemoryUserStorage = inMemoryUserStorage;
